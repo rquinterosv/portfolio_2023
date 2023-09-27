@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Proyecto from './components/Proyecto'; // Suponiendo que tienes un componente Proyecto
+
+import proyectosData from './data/proyectos.json';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Mi Portafolio</h1>
+      <div className="lista-proyectos">
+        {proyectosData.map((proyecto) => (
+          <Proyecto
+            key={proyecto.id}
+            titulo={proyecto.titulo}
+            descripcion={proyecto.descripcion}
+          />
+        ))}
+      </div>
     </div>
   );
 }
