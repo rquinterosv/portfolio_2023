@@ -63,7 +63,7 @@ nav ul li {
   font-weight: 500;
   margin-bottom: 20px;
   color: white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.5);
 }
 
 .hero-section h3 {
@@ -84,11 +84,23 @@ nav ul li {
   content: "";
   background: url('../src/img/hero.jpg') no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.5; /* Adjust the opacity (0.5) as needed */
+  opacity: 0.2; /* Adjust the opacity (0.5) as needed */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 50%; /* Makes the icons circular */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); /* Add a shadow with desired properties */
+  transition: transform 0.2s; /* Optional: Add a hover effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Optional: Zoom in on hover */
 }
