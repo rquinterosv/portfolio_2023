@@ -1,11 +1,10 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function About() {
+function Hero() {
   return (
-    <h1>About</h1>
+    <h1>Hero</h1>
   );
 }
 
-export default About;
+export default Hero;
