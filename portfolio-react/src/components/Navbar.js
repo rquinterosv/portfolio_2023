@@ -1,19 +1,42 @@
-// src/components/Navbar.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 function Navbar() {
+
+    const [scrolling, setScrolling] = useState(false);
+  
+    // Add an event listener to handle scrolling
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setScrolling(true);
+        } else {
+          setScrolling(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+    const navbarClass = scrolling ? 'navbar solid' : 'navbar transparent';
+
   return (
-    <nav>
+    <nav className='{navbarClass}'>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li>
-          <Link to="/about">Acerca de</Link>
+          <Link to="/about" className="nav-link">Portfolio</Link>
         </li>
         <li>
-          <Link to="/contact">Contacto</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </li>
       </ul>
     </nav>

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 import Home from '../src/pages/Home';
 import About from '../src/pages/About';
 import Contact from '../src/pages/Contact';
+import './App.css';
 
 function App() {
   return (
@@ -19,16 +20,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <h1>Mi Portafolio</h1>
-      <div className="lista-proyectos">
-        {proyectosData.map((proyecto) => (
-          <Proyecto
-            key={proyecto.id}
-            titulo={proyecto.titulo}
-            descripcion={proyecto.descripcion}
-          />
-        ))}
-      </div>
     </div>
   );
 }
