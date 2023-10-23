@@ -24,10 +24,10 @@ function Navbar() {
       };
     }, []);
   
-    const navbarClass = scrolling ? 'navbar solid' : 'navbar transparent';
+    const navbarClass = scrolling ? 'navbar solid' : 'navbar';
 
   return (
-    <nav className='{navbarClass}'>
+    <nav className={`${navbarClass}`}>
       <ul>
         <li>
           <Link to="/" className="nav-link">Home</Link>
