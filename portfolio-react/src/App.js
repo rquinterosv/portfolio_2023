@@ -6,6 +6,8 @@ import Home from '../src/pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from '../src/pages/Contact';
 import './App.css';
+import { createRoot } from 'react-dom/client';
+
 
 function App() {
   return (

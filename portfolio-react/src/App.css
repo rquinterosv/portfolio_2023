@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
 * {
   margin: 0;
@@ -31,7 +31,6 @@
   font-size: 60px;
   font-weight: 500;
   margin-bottom: 20px;
-  text-shadow: white;
 }
 
 .resume h3 {
@@ -79,11 +78,23 @@
   }
 
   .resume p {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 20px;
     font-style: italic;
     text-align: center;
   }
+
+  .resume h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .resume .experience h4 {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  
 }
 
 /* Navbar */
@@ -121,6 +132,7 @@ nav ul li {
 .nav-link {
   text-decoration: none;
   font-style: italic;
+  font-weight: 500;
   color: black;
 } 
 
@@ -182,26 +194,37 @@ nav ul li {
   width: auto;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 header {
   text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-  margin: 0;
-}
-
-p {
-  font-size: 18px;
-}
-
 .contact-info, .education, .experience {
   margin-top: 20px;
 }
 
-ul {
-  list-style: disc;
+.resume .experience li {
+  text-decoration: none;
+  list-style: none;
+  padding: 5px;
+  text-align: left;
+  font-style: italic;
 }
+
+/* Modal */
+
+.open-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff; /* Set your desired background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Adjust padding to your preference */
+  border: none;
+  border-radius: 4px; /* Add rounded corners if desired */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-weight: 500; /* Adjust font weight */
+  /* Add more styles as needed */
+}
+

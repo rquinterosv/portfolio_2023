@@ -10,7 +10,9 @@ function Hero() {
 
         <h1>Welcome!</h1>
         <h3>I'm Rafael Quinteros</h3>
-        <p>Full Stack Web Developer & Business Developer</p>
+        <p>I created this site to have a more dynamic presentation in my job searches.</p>
+        <p>Here you can find my work history with my profession as a business developer and some projects to show my IT skills. </p>
+        <p></p>
 
         <div>
           <a href="https://www.linkedin.com/your-profile">
