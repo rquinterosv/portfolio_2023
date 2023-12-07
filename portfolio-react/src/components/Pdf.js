@@ -97,14 +97,28 @@ return (
 
           <View style={styles.column}>
             <Text style={styles.subHeader}>Education</Text>
-            <Text style={styles.infoPresentation}>{datos.eductation}</Text>
+            {datos.education.map((edu, index) => (
+              <View key={index}>
+                <Text style={[styles.infoItem, { paddingTop: 3 }]}>{edu.degree}</Text>
+                <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
+                  <Text style={[styles.infoPresentation, { fontSize: 11, fontStyle: 'italic' }]}>
+                    {edu.institution}
+                  </Text>
+                  <Text style={[styles.infoPresentation, { fontSize: 11, fontStyle: 'italic', marginLeft: 5 }]}>
+                    | {edu.date}
+                  </Text>
+                </View>
+              </View>
+            ))}
           </View>
         </View>
 
         <View style={[styles.section, { width: '40%' }]}>
+
           <View style={{ alignItems: 'left' }}>
             <Image style={{ width: 150, height: 150, borderRadius: 80 }} source={perfilImage} />
           </View>
+
           <View style={styles.column}>
             <Text style={styles.subHeader}>Contact</Text>
             <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
@@ -132,12 +146,42 @@ return (
               <Text style={styles.infoItem}>{datos.website}</Text>
             </View>                   
           </View>
-          <View style={styles.column}>
-            <Text style={styles.subHeader}>Technical Skills</Text>
-            <Text style={styles.infoPresentation}>{datos.presentation}</Text>
+
+          <View style={[styles.column]}>
+            <Text style={styles.subHeader}>Skills</Text>
+            <View>
+              {datos.skills.map((skill, index) => (
+                <Text key={index} style={styles.infoItem}>{skill}</Text>
+              ))}
+            </View>
+          </View>
+
+          <View style={[styles.column]}>
+            <Text style={styles.subHeader}>Certificates</Text>
+            <View>
+              {datos.certificates.map((certificate, index) => (
+                <View key={index}>
+                  <Text style={styles.infoItem}>{certificate.title}</Text>
+                  <Text style={styles.infoItem}>{certificate.issuer}</Text>
+                  <Text style={styles.infoItem}>{certificate.date}</Text>
+                </View>
+              ))}
+            </View>
+          </View>
+
+          <View style={[styles.column]}>
+            <Text style={styles.subHeader}>Languages</Text>
+            <View>
+              {datos.languages.map((language, index) => (
+                <View key={index}>
+                  <Text style={styles.infoItem}>{language.language}</Text>
+                  <Text style={styles.infoItem}>{language.level}</Text>
+                </View>
+              ))}
+            </View>
           </View>
         </View>
-        {/* Más contenido del currículum */}
+        
       </Page>
     </Document>
   );
