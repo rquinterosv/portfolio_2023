@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet, Image, Font } from '@react-pdf/renderer';
 import perfilImage from '../img/perfil.jpeg'; // Importa la imagen
 import emailLogo from '../img/gmail.png';
 import phoneLogo from '../img/telephone.png';
@@ -7,6 +7,23 @@ import linkedinLogo from '../img/linkedin.png';
 import githubLogo from '../img/github.png';
 import websiteLogo from '../img/web.png';
 import locationLogo from '../img/location.png';
+
+// Fuente Calibri
+import CalibriBoldItalic from '../css/calibri/Calibri-Bold-Italic.ttf';
+import CalibriBold from '../css/calibri/Calibri-Bold.ttf';
+import CalibriItalic from '../css/calibri/Calibri-Italic.ttf';
+import CalibriLight from '../css/calibri/Calibri-Light.ttf';
+
+
+Font.register({
+  family: 'Calibri',
+  fonts: [
+    { src: CalibriBoldItalic, fontWeight: 'bold', fontStyle: 'italic' },
+    { src: CalibriBold, fontWeight: 'bold' },
+    { src: CalibriItalic, fontStyle: 'italic' },
+    { src: CalibriLight, fontWeight: 300 }, // Si deseas utilizar la versión ligera
+  ],
+});
 
 const styles = StyleSheet.create({
   page: {
@@ -25,31 +42,45 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   title: {
-    fontSize: 35,
+    fontFamily: 'Calibri',
+    fontWeight: 'bold',
+    fontSize: 34,
     marginBottom: 5,
   },
   header: {
-    fontSize: 22,
+    fontFamily: 'Calibri',
+    fontSize: 21,
     marginBottom: 5,
+  },
+  subHeader1: {
+    fontFamily: 'Calibri',
+    fontStyle: 'italic',
+    fontSize: 16,
+    marginBottom: 3,
   },
   subHeader: {
-    fontSize: 17,
-    marginBottom: 5,
-    fontStyle: 'italic', 
+    fontFamily: 'Calibri',
+    fontStyle: 'italic',
+    fontSize: 16,
+    marginBottom: 3,
+    textDecoration: 'underline',
   },
   infoPresentation: {
+    fontFamily: 'Calibri',
     fontSize: 14,
     marginBottom: 4,
     marginTop: 2,
   },
-  infoItem: {
-    fontSize: 14,
-    marginBottom: 5,
-    fontWeight: 'bold',
-  },
   pointItem: {
+    fontFamily: 'Calibri',
     fontSize: 10, 
-    padding: 4,
+    padding: 2,
+    marginBottom: 3,
+  },
+  pointItem1: {
+    fontFamily: 'Calibri',
+    fontSize: 11, 
+    marginBottom: 3,
   },
 });
 
@@ -63,24 +94,24 @@ return (
           <View style={styles.column}>
             <Text style={styles.title}>Curriculum Vitae</Text>
             <Text style={styles.header}>{datos.name}</Text>
-            <Text style={styles.subHeader}>{datos.role}</Text>
+            <Text style={styles.subHeader1}>{datos.role}</Text>
           </View>
 
           <View style={styles.column}>
             <Text style={styles.subHeader}>Professional Summary</Text>
-            <Text style={styles.infoPresentation}>{datos.presentation}</Text>
+            <Text style={styles.pointItem1}>{datos.presentation}</Text>
           </View>
 
           <View style={styles.column}>
             <Text style={styles.subHeader}>Work Experience</Text>
             {datos.experience.map((exp, index) => (
               <View key={index}>
-                <Text style={[styles.infoItem, { paddingTop: 3 }]}>{exp.title}</Text>
+                <Text style={[styles.subHeader1]}>{exp.title}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
-                  <Text style={[styles.infoPresentation, { fontSize: 11, font: 'italic' }]}>
+                  <Text style={[styles.infoPresentation]}>
                     {exp.company}
                   </Text>
-                  <Text style={[styles.infoPresentation, { fontSize: 11, font: 'italic', marginLeft: 5 }]}>
+                  <Text style={[styles.infoPresentation]}>
                     | {exp.date}
                   </Text>
                 </View>
@@ -90,23 +121,6 @@ return (
                       <Text style={styles.pointItem}>{point}</Text>
                     </View>
                   ))}
-                </View>
-              </View>
-            ))}
-          </View>
-
-          <View style={styles.column}>
-            <Text style={styles.subHeader}>Education</Text>
-            {datos.education.map((edu, index) => (
-              <View key={index}>
-                <Text style={[styles.infoItem, { paddingTop: 3 }]}>{edu.degree}</Text>
-                <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
-                  <Text style={[styles.infoPresentation, { fontSize: 11, fontStyle: 'italic' }]}>
-                    {edu.institution}
-                  </Text>
-                  <Text style={[styles.infoPresentation, { fontSize: 11, fontStyle: 'italic', marginLeft: 5 }]}>
-                    | {edu.date}
-                  </Text>
                 </View>
               </View>
             ))}
@@ -121,65 +135,83 @@ return (
 
           <View style={styles.column}>
             <Text style={styles.subHeader}>Contact</Text>
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center'}}>
               <Image style={{ width: 15, height: 15, marginRight: 5 }} source={locationLogo} />
-              <Text style={styles.infoItem}>{datos.location}</Text>
+              <Text style={styles.infoPresentation}>{datos.location}</Text>
             </View>  
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center'}}>
               <Image style={{ width: 15, height: 15, marginRight: 5 }} source={emailLogo} />
-              <Text style={styles.infoItem}>{datos.email}</Text>
+              <Text style={styles.infoPresentation}>{datos.email}</Text>
             </View>   
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center'}}>
               <Image style={{ width: 15, height: 15, marginRight: 5 }} source={phoneLogo} />
-              <Text style={styles.infoItem}>{datos.phone}</Text>
+              <Text style={styles.infoPresentation}>{datos.phone}</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center'}}>
               <Image style={{ width: 15, height: 15, marginRight: 5 }} source={linkedinLogo} />
-              <Text style={styles.infoItem}>{datos.linkedin}</Text>
+              <Text style={styles.infoPresentation}>{datos.linkedin}</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center'}}>
               <Image style={{ width: 15, height: 15, marginRight: 5 }} source={githubLogo} />
-              <Text style={styles.infoItem}>{datos.github}</Text>
+              <Text style={styles.infoPresentation}>{datos.github}</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 5 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center'}}>
               <Image style={{ width: 15, height: 15, marginRight: 5 }} source={websiteLogo} />
-              <Text style={styles.infoItem}>{datos.website}</Text>
+              <Text style={styles.infoPresentation}>{datos.website}</Text>
             </View>                   
           </View>
 
-          <View style={[styles.column]}>
+          <View style={styles.container}>
             <Text style={styles.subHeader}>Skills</Text>
-            <View>
-              {datos.skills.map((skill, index) => (
-                <Text key={index} style={styles.infoItem}>{skill}</Text>
-              ))}
+            <View style={{ flexDirection: 'row' }}>
+              <View style={[styles.column, { flex: 1 }]}>
+                {datos.skills1 && datos.skills1.map((skill, index) => (
+                  <Text key={index} style={styles.pointItem}>
+                    {skill}
+                  </Text>
+                ))}
+              </View>
+              <View style={[styles.column, { flex: 1 }]}>
+                {datos.skills2 && datos.skills2.map((skill, index) => (
+                  <Text key={index} style={styles.pointItem}>
+                    {skill}
+                  </Text>
+                ))}
+              </View>
             </View>
           </View>
 
-          <View style={[styles.column]}>
-            <Text style={styles.subHeader}>Certificates</Text>
-            <View>
-              {datos.certificates.map((certificate, index) => (
-                <View key={index}>
-                  <Text style={styles.infoItem}>{certificate.title}</Text>
-                  <Text style={styles.infoItem}>{certificate.issuer}</Text>
-                  <Text style={styles.infoItem}>{certificate.date}</Text>
+
+          <View style={styles.column}>
+            <Text style={styles.subHeader}>Education</Text>
+            {datos.education.map((edu, index) => (
+              <View key={index}>
+                <Text style={[styles.subHeader1]}>{edu.degree}</Text>
+                <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
+                  <Text style={[styles.pointItem1]}>
+                    {edu.institution}
+                  </Text>
+                  <Text style={[styles.pointItem1]}>
+                    | {edu.date}
+                  </Text>
                 </View>
-              ))}
-            </View>
+              </View>
+            ))}
           </View>
 
           <View style={[styles.column]}>
-            <Text style={styles.subHeader}>Languages</Text>
-            <View>
-              {datos.languages.map((language, index) => (
-                <View key={index}>
-                  <Text style={styles.infoItem}>{language.language}</Text>
-                  <Text style={styles.infoItem}>{language.level}</Text>
-                </View>
-              ))}
-            </View>
+          <Text style={styles.subHeader}>Languages</Text>
+          <View>
+            {datos.languages.map((language, index) => (
+              <Text key={index} style={index % 2 === 0 ? styles.pointItem1 : styles.pointItem1}>
+                {`${language.language}: ${language.level}`}
+              </Text>
+            ))}
           </View>
+        </View>
+
+
+
         </View>
         
       </Page>

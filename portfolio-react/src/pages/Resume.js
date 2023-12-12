@@ -1,11 +1,12 @@
+// src/components/Navbar.js
 import React from 'react';
 import { PDFViewer} from '@react-pdf/renderer';
 import '../App.css';
-import Pdf from '../components/Pdf';
-import datosCV from '../components/datosCV';
+import Nzpdf from '../components/Nzpdf';
+import datosNZ from '../components/datosNZ';
 
 
-function Home() {
+function Resume() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
@@ -13,7 +14,7 @@ function Home() {
         <h1>My Resume</h1>
         <div className="pdf-container">
           <PDFViewer style={{ width: '98%', height: '100vh' }}>
-            <Pdf datos={datosCV} />
+            <Nzpdf datos={datosNZ} />
           </PDFViewer>
         </div>
       </div>
@@ -21,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Resume;
