@@ -1,0 +1,32 @@
+/* Hero.module.css */
+
+/* Estilos para la animación de escritura */
+.reveal-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: reveal 3s steps(30, end) forwards; /* Animación para pantallas más grandes */
+  }
+  
+  /* Animación de transición más rápida en dispositivos móviles */
+  @media (max-width: 768px) {
+    .reveal-text {
+      overflow: visible; /* Mostrar el texto completo sin animación en pantallas más pequeñas */
+      border: none; /* Eliminar el efecto de escritura en dispositivos móviles */
+      animation: reveal 1.5s linear forwards; /* Reducir la duración y cambiar la interpolación */
+      white-space: normal; /* Permitir que el texto fluya y se ajuste al ancho del contenedor */
+    }
+  }
+  
+  
+  
+  
+  @keyframes reveal {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
