@@ -10,36 +10,49 @@
   padding: 0;
 }
 
-/* Navbar */
+/* App.css (o tu archivo de estilos principal) */
 
-.navbar {
-  background-color: rgba(255, 255, 255 0);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  transition: background-color 0.3s;
-}
-
-.solid {
-  background-color: rgba(255, 255, 255, 1); /* Opaque white when scrolling */
-}
-
-.transparent {
+/* Agrega estas clases específicas de Tailwind que se están utilizando en el componente Navbar */
+.bg-transparent {
   background-color: transparent;
 }
 
-nav ul{
+.bg-white {
+  background-color: #fff;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Estilos específicos para tu barra de navegación */
+.navbar ul {
   display: flex;
   list-style: none;
   padding: 0;
   justify-content: center;
+  margin-top: 10px; /* Ajusta el margen superior para alinear mejor en dispositivos más grandes */
 }
 
-nav ul li {
+.navbar ul li {
   padding: 15px;
-  font-size: 25px;
+  font-size: 18px; /* Ajusta el tamaño de fuente para dispositivos móviles */
 }
 
 .nav-link {
@@ -47,7 +60,19 @@ nav ul li {
   font-style: italic;
   font-weight: 500;
   color: black;
-} 
+}
+
+/* Agrega estilos para el botón de menú en dispositivos móviles */
+/* Puedes personalizar estos estilos según sea necesario */
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Otras clases de Tailwind utilizadas en el componente Navbar (no es necesario definirlas, ya están en Tailwind) */
+/* lg:hidden, lg:flex, lg:inline-block, lg:mt-0 */
 
 /* Modal */
 
