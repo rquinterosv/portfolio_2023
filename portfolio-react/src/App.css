@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
 * {
@@ -43,24 +48,6 @@ nav ul li {
   font-weight: 500;
   color: black;
 } 
-
-/* Hero Section */
-
-.hero-section {
-  background-image: url('../src/img/hero.jpg');
-  background-size: cover; /* Use "cover" to fill the entire hero section */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  text-align: center;
-  padding: 20px;
-  color: white;
-  height: 80vh; /* Set the height of the hero section to 100% of the viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Modal */
 

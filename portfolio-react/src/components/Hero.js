@@ -1,41 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-
-function Hero() {
+const Hero = () => {
   return (
-    <div class="hero-container">
-      <div class="hero-section">
+    <section className="bg-gray-900 text-white py-20">
+      <div className="container mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+        <p className="text-lg">Showing off my skills as a web developer!</p>
 
-        <h1>Welcome!</h1>
-        <h3>I'm Rafael Quinteros</h3>
-        <p>I created this site to have a more dynamic presentation in my job searches.</p>
-        <p>Here you can find my work history with my profession as a business developer and some projects to show my IT skills. </p>
-        <p></p>
-
-        <div>
-          <a href="https://www.linkedin.com/your-profile">
-            <div className="social-icon">
-              <FaLinkedin size={30} style={{ color: 'white' }} />
-            </div>
+        <div className="flex justify-center space-x-4 mt-8">
+          <a href="https://www.linkedin.com/your-profile" className="social-icon">
+            <FaLinkedin size={30} style={{ color: 'white' }} />
           </a>
-          <a href="https://github.com/your-username">
-            <div className="social-icon">
-              <FaGithub size={30} style={{ color: 'white' }} />
-            </div>
+          <a href="https://github.com/your-username" className="social-icon">
+            <FaGithub size={30} style={{ color: 'white' }} />
           </a>
-          <a href="mailto:youremail@example.com">
-            <div className="social-icon">
-              <FaEnvelope size={30} style={{ color: 'white' }} />
-            </div>
+          <a href="mailto:youremail@example.com" className="social-icon">
+            <FaEnvelope size={30} style={{ color: 'white' }} />
           </a>
         </div>
-
       </div>
-    </div>
-
+    </section>
   );
-}
+};
 
 export default Hero;

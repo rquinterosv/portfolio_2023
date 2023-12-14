@@ -1,6 +1,7 @@
 import React from 'react';
 import { PDFViewer} from '@react-pdf/renderer';
 import '../App.css';
+import Hero from '../components/Hero';
 import Pdf from '../components/Pdf';
 import datosCV from '../components/datosCV';
 
@@ -8,6 +9,9 @@ import datosCV from '../components/datosCV';
 function Home() {
 
   return (
+
+    <><Hero />
+    
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
       <div style={{ textAlign: 'center', width: '100%', marginTop: '30px' }}>
         <h1>My Resume</h1>
@@ -17,7 +21,7 @@ function Home() {
           </PDFViewer>
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
 
