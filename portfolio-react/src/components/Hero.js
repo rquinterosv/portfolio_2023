@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowText(true);
-    }, 500); // Muestra el texto después de 500ms (ajusta este valor según lo necesites)
+    }, 400);
   }, []);
 
   return (

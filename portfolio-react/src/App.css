@@ -11,8 +11,6 @@
 }
 
 /* App.css (o tu archivo de estilos principal) */
-
-/* Agrega estas clases específicas de Tailwind que se están utilizando en el componente Navbar */
 .bg-transparent {
   background-color: transparent;
 }
@@ -42,24 +40,31 @@
 }
 
 /* Estilos específicos para tu barra de navegación */
+
+.navbar {
+  background-color: #333333; /* Fondo oscuro */
+  color: #FFFFFF; /* Texto blanco o gris claro */
+  font-family: 'Calibri', sans-serif; /* Fuente Calibri o similar */
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
   padding: 0;
   justify-content: center;
-  margin-top: 10px; /* Ajusta el margen superior para alinear mejor en dispositivos más grandes */
+  margin-top: 10px; 
 }
 
 .navbar ul li {
   padding: 15px;
-  font-size: 18px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+  font-size: 18px; 
 }
 
 .nav-link {
   text-decoration: none;
   font-style: italic;
   font-weight: 500;
-  color: black;
+  color: #FFFFFF;
 }
 
 /* Agrega estilos para el botón de menú en dispositivos móviles */
