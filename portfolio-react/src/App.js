@@ -15,12 +15,14 @@ function App() {
     <div className="App">
       <Router>
         <Navbar /> {/* Renderiza Navbar fuera de las rutas */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
-        </Routes>
+        <div> {/* Aplica el margen superior al contenido */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            {/* Rutas restantes */}
+          </Routes>
+        </div>
       </Router>
     </div>
   );

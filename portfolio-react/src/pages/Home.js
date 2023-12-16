@@ -30,7 +30,9 @@ const Home = () => {
 
   return (
     <div>
-      <Hero />
+      <div> 
+        <Hero />
+      </div>
       <AboutMe />
       <div className="flex flex-row justify-around">
         {cardsData.map((card, index) => (

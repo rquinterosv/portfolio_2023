@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import styles from '../css/Hero.module.css'; 
-
 
 const Hero = () => {
-
   const [showText, setShowText] = useState(false);
 
   useEffect(() => {
@@ -14,33 +11,34 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-white">
-      <div className="container mx-auto pt-12 md:pt-24 px-6 text-center">
-        <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${showText ? styles['reveal-text'] : ''}`}>
-          Tailwind Starter Templates - Hero Product
-        </h1>
-        <h2 className={`text-lg md:text-xl ${showText ? styles['reveal-text'] : ''}`}>
-          This starter template contains:
-        </h2>
-        <p className="mt-8 mb-8">
-          <a href="https://github.com/tailwindtoolbox/Hero-Product/archive/master.zip" target="_blank" rel="noopener" className="inline-block bg-teal hover:bg-teal-dark text-white text-xl font-extrabold py-3 px-5 rounded shadow hover:shadow-lg mr-4">
-            Download Template
-          </a>
-          <a href="https://github.com/tailwindtoolbox/Hero-Product" target="_blank" rel="noopener" className="inline-block bg-grey-lightest hover:bg-black text-grey-darkest hover:text-white text-xl font-extrabold py-3 px-5 rounded shadow hover:shadow-lg">
-            View on GitHub
-          </a>
-        </p>
-
-        <div className="flex justify-center space-x-4">
-          <a href="https://www.linkedin.com/your-profile" className="social-icon">
-            <FaLinkedin size={30} style={{ color: 'black' }} />
-          </a>
-          <a href="https://github.com/your-username" className="social-icon">
-            <FaGithub size={30} style={{ color: 'black' }} />
-          </a>
-          <a href="mailto:youremail@example.com" className="social-icon">
-            <FaEnvelope size={30} style={{ color: 'black' }} />
-          </a>
+    <div
+      className="static overflow-hidden bg-cover bg-no-repeat p-12 text-center"
+      style={{
+        backgroundImage: "url('https://tecdn.b-cdn.net/img/new/slides/041.webp')",
+        height: '500px',
+      }}
+    >
+      <div
+        className="static bottom-0 left-0 right-0 top-0 mt-5 h-full w-full overflow-hidden bg-fixed"
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
+      >
+        <div className="flex h-full items-center justify-center">
+          <div className="text-white">
+            <h2 className={`mb-4 text-4xl font-semibold ${showText ? 'opacity-100' : 'opacity-0'}`}>
+              Heading
+            </h2>
+            <h4 className={`mb-6 text-xl font-semibold ${showText ? 'opacity-100' : 'opacity-0'}`}>
+              Subheading
+            </h4>
+            <button
+              type="button"
+              className="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              Call to action
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -48,3 +46,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

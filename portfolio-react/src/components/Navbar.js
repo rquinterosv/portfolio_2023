@@ -1,37 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [scrolling, setScrolling] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const navbarClass = scrolling ? 'bg-black shadow-lg' : 'bg-black';
-
   return (
-    <nav className={`fixed w-full ${navbarClass} p-4`}>
+    <nav className="fixed w-full bg-black shadow-lg p-4">
       <div className="flex justify-between items-center">
         <Link to="/" className="text-white font-semibold hover:underline">Rafael Quinteros</Link>
         <div className="lg:hidden">
-          <button
-            onClick={() => setShowMenu(!showMenu)}
-            className="block text-white focus:outline-none"
-          >
+          <button onClick={() => setShowMenu(!showMenu)} className="block text-white focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -63,6 +41,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/about" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
+              About
+            </Link>
+          </li>
+          <li>
             <Link to="/portfolio" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
               Portfolio
             </Link>
@@ -70,11 +53,6 @@ const Navbar = () => {
           <li>
             <Link to="/contact" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/resume" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
-              Resume
             </Link>
           </li>
         </ul>

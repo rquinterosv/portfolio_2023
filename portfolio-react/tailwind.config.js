@@ -14,7 +14,7 @@ module.exports = {
         // Define tus propios colores personalizados
       },
       fontFamily: {
-        custom: ['Roboto', 'sans-serif'],
+        custom: ['Calibri', 'sans-serif'],
         // Define tus propias fuentes personalizadas
       },
       // Más configuraciones de tema extendido
