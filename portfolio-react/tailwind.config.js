@@ -26,6 +26,8 @@ module.exports = {
     },
   },
   plugins: [
-    // Puedes agregar plugins de terceros aquí si es necesario
+    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/typography'),
+    // require('@tailwindcss/aspect-ratio'),  
   ],
 };
