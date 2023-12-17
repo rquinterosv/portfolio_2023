@@ -1,0 +1,14 @@
+/* Hero.css */
+
+/* Añade animaciones para las clases animated-text */
+.animated-text {
+    overflow: hidden; /* Oculta el texto sobrante */
+    white-space: nowrap; /* Evita saltos de línea */
+    animation: type 4s steps(60, end); /* Animación tipo escritura */
+  }
+  
+  @keyframes type {
+    from {
+      width: 0; /* Empieza desde cero ancho */
+    }
+  }
