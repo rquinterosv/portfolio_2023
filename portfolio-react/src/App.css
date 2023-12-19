@@ -95,17 +95,3 @@
   font-weight: 500; /* Adjust font weight */
   /* Add more styles as needed */
 }
-
-/* PDF */
-
-@media (max-width: 768px) {
-  .pdf-container {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .pdf-container {
-    width: 100%;
-  }
-}

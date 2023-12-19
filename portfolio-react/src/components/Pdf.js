@@ -209,11 +209,7 @@ return (
             ))}
           </View>
         </View>
-
-
-
-        </View>
-        
+        </View>        
       </Page>
     </Document>
   );

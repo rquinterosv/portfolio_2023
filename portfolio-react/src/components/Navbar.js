@@ -41,8 +41,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
-              About
+            <Link to="/workexp" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
+              Work Experience
             </Link>
           </li>
           <li>
@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/contact" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
-              Contact
+              About Me
             </Link>
           </li>
         </ul>

@@ -44,12 +44,12 @@ const datosCV  = {
     ],
     education: [
       {
-        degree: 'Full Stack Developer',
+        degree: 'Full Stack Development',
         institution: 'CCTB (Canada)',
         date: 'Jul 2023 - Dec 2023',
       },
       {
-        degree: 'Full Stack Developer',
+        degree: 'Full Stack Development',
         institution: 'Bootcamp Desafio Latam (Chile)',
         date: '2021 - 2022',
       },

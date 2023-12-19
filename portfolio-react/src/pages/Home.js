@@ -12,22 +12,22 @@ const Home = () => {
 
   const cards = [
     {
-      title: "Título de la tarjeta 1",
-      description: "Descripción de la tarjeta 1",
+      title: "Work Experience",
+      description: "You'll be able to see my resume, which is focused on showcasing all of my work experience that I plan to use to become an increasingly experienced developer with a business-oriented vision.",
       bgColor: "blue",
       imageUrl: "url_de_la_imagen_1.jpg",
       buttonLink: "/ruta-a-otra-pagina-1"
     },
     {
-      title: "Título de la tarjeta 2",
-      description: "Descripción de la tarjeta 2",
+      title: "Portoflio",
+      description: "Here's my portfolio, showcasing some of my most dedicated projects along with the programming languages used. All these projects are for real clients, giving me the opportunity to enhance business ideas.",
       bgColor: "green",
       imageUrl: "url_de_la_imagen_2.jpg",
       buttonLink: "/ruta-a-otra-pagina-2"
     },
     {
-      title: "Título de la tarjeta 3",
-      description: "Descripción de la tarjeta 2",
+      title: "Lifestyle",
+      description: "Here, I share a glimpse of my personal life, displaying my interests and what passionately drives me in life. While brief, the purpose of this section is to demonstrate that my life isn't solely centered around work. I aim to complement my professional endeavors with the enthusiasm and motivation derived from my lifestyle.",
       bgColor: "green",
       imageUrl: "url_de_la_imagen_2.jpg",
       buttonLink: "/ruta-a-otra-pagina-2"

@@ -4,8 +4,7 @@ import Navbar from './components/Navbar'; // Importa tu componente Navbar
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importa BrowserRouter, Routes y Route
 import Home from '../src/pages/Home';
 import Portfolio from './pages/Portfolio';
-import Contact from '../src/pages/Contact';
-import Resume from '../src/pages/Resume';
+import WorkExp from '../src/pages/WorkExp';
 import './App.css';
 import { createRoot } from 'react-dom/client';
 
@@ -18,7 +17,7 @@ function App() {
         <div> {/* Aplica el margen superior al contenido */}
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/workexp" element={<WorkExp />} />
             <Route path="/portfolio" element={<Portfolio />} />
             {/* Rutas restantes */}
           </Routes>
