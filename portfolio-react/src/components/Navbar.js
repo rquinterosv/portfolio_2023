@@ -36,22 +36,22 @@ const Navbar = () => {
         </div>
         <ul className={`lg:flex ${showMenu ? 'block' : 'hidden'} mt-4 lg:mt-0`}>
           <li>
-            <Link to="/" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
+            <Link to="/" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/workexp" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
+            <Link to="/workexp" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
               Work Experience
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
+            <Link to="/portfolio" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline">
+            <Link to="/contact" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
               About Me
             </Link>
           </li>
