@@ -1,19 +1,18 @@
-// src/components/Navbar.js
 import React from 'react';
 import Proyecto from '../components/Proyecto';
-import proyectosData from '../data/proyectos.json';
+import datosProyecto from '../components/datosProyecto';
 
-function About() {
+function Portfolio() {
   return (
-    <><h1>Mi Portafolio</h1><div className="lista-proyectos">
-      {proyectosData.map((proyecto) => (
-        <Proyecto
-          key={proyecto.id}
-          titulo={proyecto.titulo}
-          descripcion={proyecto.descripcion} />
-      ))}
-    </div></>
+    <div className="portfolio">
+      <h1>Mis Proyectos</h1>
+      <div className="lista-proyectos">
+        {datosProyecto.map((proyecto) => (
+          <Proyecto key={proyecto.id} proyecto={proyecto} />
+        ))}
+      </div>
+    </div>
   );
 }
 
-export default About;
+export default Portfolio;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { PDFViewer} from '@react-pdf/renderer';
 import '../App.css';
 
 import Hero from '../components/Hero';
@@ -20,14 +19,14 @@ const Home = () => {
       description: "You'll be able to see my resume, which is focused on showcasing all of my work experience that I plan to use to become an increasingly experienced developer with a business-oriented vision. Here you can find direct links so you can contact me and discuss future job opportunities.",
       bgColor: "blue",
       imageUrl: logoWork,
-      buttonLink: "/ruta-a-otra-pagina-1"
+      buttonLink: "/workexp"
     },
     {
       title: "Portoflio",
       description: "Here's my portfolio, showcasing some of my most dedicated projects along with the programming languages used. All these projects are for real clients, giving me the opportunity to enhance business ideas with them and create de design of the Web App and also the logic of the user history.",
       bgColor: "green",
       imageUrl: logoPortfolio,
-      buttonLink: "/ruta-a-otra-pagina-2"
+      buttonLink: "/portfolio"
     },
     {
       title: "Lifestyle",
