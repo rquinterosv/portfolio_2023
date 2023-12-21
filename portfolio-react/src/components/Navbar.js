@@ -51,8 +51,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
-              Portfolio
+            <Link to="/blog" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
+              About Me
             </Link>
           </li>
         </ul>

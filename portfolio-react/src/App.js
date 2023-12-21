@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 import Home from '../src/pages/Home';
 import Portfolio from './pages/Portfolio';
 import WorkExp from '../src/pages/WorkExp';
+import Blog from '../src/pages/Blog'
 import './App.css';
 import { createRoot } from 'react-dom/client';
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/workexp" element={<WorkExp />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blog" element={<Blog />} />
             {/* Rutas restantes */}
           </Routes>
         </div>
