@@ -1,17 +1,34 @@
+import nodejsLogo from "../img/nodejs.png";
+import reactLogo from "../img/react.png";
+import bootstrapLogo from "../img/bootstrap.png";
+import tailwindLogo from "../img/Tailwind.png";
+import perfilImage from "../img/perfil.jpeg";
+import trasmundoImage from "../img/trasmundo.png";
+
 const datosProyecto = [
   {
     id: 1,
-    nombre: "Proyecto 1",
-    imagen: "url_imagen_proyecto_1",
-    lenguajes: ["JavaScript", "React", "Node.js"],
+    nombre: "Personal Portfolio",
+    imagen: perfilImage,
+    lenguajes: [
+      { nombre: "JavaScript", logo: nodejsLogo },
+      { nombre: "React", logo: reactLogo },
+      { nombre: "Node.js", logo: nodejsLogo },
+      { nombre: "Bootstrap", logo: bootstrapLogo },
+    ],
     descripcion: "Descripción del Proyecto 1.",
     link: "link_proyecto_1",
   },
   {
     id: 2,
     nombre: "Proyecto 2",
-    imagen: "url_imagen_proyecto_2",
-    lenguajes: ["HTML", "CSS", "JavaScript"],
+    imagen: trasmundoImage,
+    lenguajes: [
+      { nombre: "JavaScript", logo: nodejsLogo },
+      { nombre: "React", logo: reactLogo },
+      { nombre: "Node.js", logo: nodejsLogo },
+      { nombre: "Tailwindscss", logo: tailwindLogo },
+    ],
     descripcion: "Descripción del Proyecto 2.",
     link: "link_proyecto_2",
   },
