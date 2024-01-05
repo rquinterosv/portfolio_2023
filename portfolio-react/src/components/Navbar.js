@@ -4,6 +4,16 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+   // Función para cerrar el menú cuando se hace clic en un enlace
+   const closeMenu = () => {
+    setShowMenu(false);
+  };
+
+  // Cerrar el menú cuando la ruta cambie
+  useEffect(() => {
+    closeMenu(); // Cerrar el menú al cambiar de página
+  }, []);
+
   return (
     <nav className="fixed w-full bg-black shadow-lg p-4">
       <div className="flex justify-between items-center">
@@ -36,22 +46,22 @@ const Navbar = () => {
         </div>
         <ul className={`lg:flex ${showMenu ? 'block' : 'hidden'} mt-4 lg:mt-0`}>
           <li>
-            <Link to="/" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
+            <Link to="/" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2" onClick={closeMenu}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/workexp" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
+            <Link to="/workexp" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2" onClick={closeMenu}>
               Work Experience
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
+            <Link to="/portfolio" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2" onClick={closeMenu}>
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/blog" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2">
+            <Link to="/blog" className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2" onClick={closeMenu}>
               About Me
             </Link>
           </li>
