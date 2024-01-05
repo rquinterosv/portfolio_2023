@@ -33,7 +33,7 @@ const Home = () => {
       description: "Here, I share a glimpse of my personal life, displaying my interests and what passionately drives me in life. While brief, the purpose of this section is to demonstrate that my life isn't solely centered around work. I aim to complement my professional endeavors with the enthusiasm and motivation derived from my lifestyle.",
       bgColor: "green",
       imageUrl: logoHobby,
-      buttonLink: "/ruta-a-otra-pagina-2"
+      buttonLink: "/blog"
     },
     // Puedes agregar más objetos con datos de tarjetas si es necesario
   ];
