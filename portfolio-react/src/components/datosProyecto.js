@@ -16,8 +16,8 @@ const datosProyecto = [
       { nombre: "Node.js", logo: nodejsLogo },
       { nombre: "Bootstrap", logo: bootstrapLogo },
     ],
-    descripcion: "Descripción del Proyecto 1.",
-    link: "link_proyecto_1",
+    descripcion: "Project created to showcase my work experience, present the projects I've been working on, and also share some things I'm passionate about in life.",
+    link: "https://portfolio-2023-coral-three.vercel.app/",
   },
   {
     id: 2,
@@ -29,8 +29,8 @@ const datosProyecto = [
       { nombre: "Node.js", logo: nodejsLogo },
       { nombre: "Tailwindscss", logo: tailwindLogo },
     ],
-    descripcion: "Descripción del Proyecto 2.",
-    link: "link_proyecto_2",
+    descripcion: "Project focused on providing migration advisory services so that people from Latin America, initially, can access opportunities to obtain study visas, learn English, or plan vacations",
+    link: "https://trasmundo.vercel.app",
   },
   // Agrega más proyectos si es necesario
 ];
