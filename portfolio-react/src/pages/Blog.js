@@ -9,20 +9,20 @@ const Blog = () => {
     {
       id: 1,
       title: 'Outdoor Life',
-      description: 'Amante de capturar momentos únicos a través de la lente.',
+      description: 'A nature enthusiast, passionate about climbing and the outdoors, my life revolves around discovering new places and exploring the natural corners of the world.',
       images: [img1, img1]
     },
     {
       id: 2,
       title: 'Music',
-      description: 'Explorador de senderos naturales y amante de la aventura al aire libre.',
+      description: 'Passionate about music, I have studied various instruments, participating in folkloric groups in Chile during my youth. In my university years, I studied three years of music theory, which I now apply in my personal moments.',
       images: [img1, img1]
 
     },
     {
       id: 3,
-      title: 'Adventure',
-      description: 'Amante de capturar momentos únicos a través de la lente.',
+      title: 'Nomadic Life',
+      description: 'Thanks to remote work and my studies in technology, I have dared to travel the world, starting by moving away from my hometown and exploring different regions of my country. I have lived in Canada for a year and am currently exploring the beautiful country of New Zealand.',
       images: [img1, img1]
 
     },
