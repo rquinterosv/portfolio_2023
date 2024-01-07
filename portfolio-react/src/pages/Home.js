@@ -3,6 +3,8 @@ import '../App.css';
 
 import AboutMe from '../components/AboutMe';
 import CardList from '../components/CardList'; 
+import Service from '../components/Service';
+
 import Footer from '../components/Footer';
 
 // Logos Cards
@@ -44,6 +46,7 @@ const Home = () => {
         {/* <Welcome /> */}
       </div>
       <AboutMe />
+      <Service />
       <CardList cardData={cards} />
     </div>
   );
