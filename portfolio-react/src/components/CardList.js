@@ -5,7 +5,7 @@ const CardList = ({ cardData }) => {
   return (
     <div className="flex flex-wrap">
       {cardData.map((card, index) => (
-        <div key={index} className="w-full md:w-1/3 p-4 md:p-6" key={index}>
+        <div key={index} className="w-full md:w-1/2 p-4 md:p-6" key={index}>
           <Card
             key={index}
             title={card.title}
