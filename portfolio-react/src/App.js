@@ -6,8 +6,8 @@ import Home from '../src/pages/Home';
 import Portfolio from './pages/Portfolio';
 import WorkExp from '../src/pages/WorkExp';
 import Blog from '../src/pages/Blog'
+import Footer from '../src/components/Footer';
 import './App.css';
-import { createRoot } from 'react-dom/client';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
             {/* Rutas restantes */}
           </Routes>
         </div>
+        <Footer />
       </Router>
     </div>
   );

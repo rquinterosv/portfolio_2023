@@ -8,10 +8,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Calibri', 'sans-serif';
 }
 
-/* App.css (o tu archivo de estilos principal) */
 .bg-transparent {
   background-color: transparent;
 }
@@ -40,8 +39,6 @@
   display: inline-block;
 }
 
-/* Estilos específicos para tu barra de navegación */
-
 .navbar {
   background-color: #333333; /* Fondo oscuro */
   color: #FFFFFF; /* Texto blanco o gris claro */
@@ -68,17 +65,12 @@
   color: #FFFFFF;
 }
 
-/* Agrega estilos para el botón de menú en dispositivos móviles */
-/* Puedes personalizar estos estilos según sea necesario */
 .navbar button {
   background: none;
   border: none;
   cursor: pointer;
   outline: none;
 }
-
-/* Otras clases de Tailwind utilizadas en el componente Navbar (no es necesario definirlas, ya están en Tailwind) */
-/* lg:hidden, lg:flex, lg:inline-block, lg:mt-0 */
 
 /* Modal */
 

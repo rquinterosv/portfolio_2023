@@ -4,18 +4,16 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-   // Función para cerrar el menú cuando se hace clic en un enlace
    const closeMenu = () => {
     setShowMenu(false);
   };
 
-  // Cerrar el menú cuando la ruta cambie
   useEffect(() => {
-    closeMenu(); // Cerrar el menú al cambiar de página
+    closeMenu(); 
   }, []);
 
   return (
-    <nav className="fixed w-full bg-black shadow-lg p-4">
+    <nav className="static w-full bg-black shadow-lg p-4">
       <div className="flex justify-between items-center">
         <Link to="/" className="text-white font-semibold hover:underline">Rafael Quinteros</Link>
         <div className="lg:hidden">

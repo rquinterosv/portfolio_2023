@@ -1,9 +1,8 @@
 import React from 'react';
 import '../App.css';
 
-import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
-import CardList from '../components/CardList'; // Importa CardList en lugar de Card
+import CardList from '../components/CardList'; 
 import Footer from '../components/Footer';
 
 // Logos Cards
@@ -35,18 +34,17 @@ const Home = () => {
       imageUrl: logoHobby,
       buttonLink: "/blog"
     },
-    // Puedes agregar más objetos con datos de tarjetas si es necesario
   ];
 
 
   return (
     <div>
       <div> 
-        <Hero />
+        {/* <Hero /> */}
+        {/* <Welcome /> */}
       </div>
       <AboutMe />
-      <CardList cardData={cards} /> {/* Usando CardList para mostrar las tarjetas */}
-      <Footer />
+      <CardList cardData={cards} />
     </div>
   );
 }
