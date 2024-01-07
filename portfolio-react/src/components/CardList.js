@@ -9,10 +9,8 @@ const CardList = ({ cardData }) => {
           <Card
             key={index}
             title={card.title}
+            subtitle={card.subtitle}
             description={card.description}
-            bgColor={card.bgColor}
-            imageUrl={card.imageUrl}
-            buttonLink={card.buttonLink}
           />
         </div>
       ))}

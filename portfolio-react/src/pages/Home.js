@@ -16,25 +16,20 @@ const Home = () => {
 
   const cards = [
     {
-      title: "Work Experience",
-      description: "You'll be able to see my resume, which is focused on showcasing all of my work experience that I plan to use to become an increasingly experienced developer with a business-oriented vision. Here you can find direct links so you can contact me and discuss future job opportunities.",
+      title: "Building Landing Pages",
+      subtitle: "Let's grow your business with happy consumers!",
+      description: "Based on my client's requirements, I develop responsive landing pages, implementing SEO practices to enhance page visibility and integrating contact points to increase visitor interaction",
       bgColor: "blue",
       imageUrl: logoWork,
       buttonLink: "/workexp"
     },
     {
-      title: "Portoflio",
-      description: "Here's my portfolio, showcasing some of my most dedicated projects along with the programming languages used. All these projects are for real clients, giving me the opportunity to enhance business ideas with them and create de design of the Web App and also the logic of the user history.",
+      title: "User-Centric Conversion Strategy",
+      subtitle: "Let's work together and increase your client conversion!",
+      description: "Based on user behavior analysis on the website, I offer content advisory sessions to enhance lead interaction upon visiting the webpage. Additionally, I provide ongoing maintenance and continuous support to ensure proper page functionality.",
       bgColor: "green",
       imageUrl: logoPortfolio,
       buttonLink: "/portfolio"
-    },
-    {
-      title: "Lifestyle",
-      description: "Here, I share a glimpse of my personal life, displaying my interests and what passionately drives me in life. While brief, the purpose of this section is to demonstrate that my life isn't solely centered around work. I aim to complement my professional endeavors with the enthusiasm and motivation derived from my lifestyle.",
-      bgColor: "green",
-      imageUrl: logoHobby,
-      buttonLink: "/blog"
     },
   ];
 
