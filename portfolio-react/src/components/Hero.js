@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import HeroImg from '../img/Hero2.png'
 
 const Hero = () => {
   const [showContent, setShowContent] = useState(false);
@@ -24,8 +25,10 @@ const Hero = () => {
     <div
       className="static overflow-hidden bg-cover bg-no-repeat p-12 text-center"
       style={{
-        backgroundImage: "url('https://tecdn.b-cdn.net/img/new/slides/041.webp')",
-        height: '500px',
+        backgroundImage: `url(${HeroImg})`, // Ruta de la imagen
+        height: '350px',
+        backgroundSize: 'contain', // Ajuste para mantener la relación de aspecto
+        backgroundPosition: 'center', // Centra la imagen
       }}
     >
       <div className="absolute inset-0 flex flex-col items-center justify-center">
