@@ -13,7 +13,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="static w-full bg-black shadow-lg p-4">
+    <nav className="static w-full bg-gray-900 shadow-lg p-4">
       <div className="flex justify-between items-center">
         <Link to="/" className="text-white font-semibold hover:underline">Rafael Quinteros</Link>
         <div className="lg:hidden">

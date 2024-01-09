@@ -4,13 +4,12 @@ import '../App.css';
 import AboutMe from '../components/AboutMe';
 import CardList from '../components/CardList'; 
 import Service from '../components/Service';
+import References from '../components/References';
 
-import Footer from '../components/Footer';
 
 // Logos Cards
 import logoWork from '../img/cv.png'
 import logoPortfolio from '../img/portfolio.png'
-import logoHobby from '../img/hobby.png'
 
 const Home = () => {
 
@@ -43,6 +42,7 @@ const Home = () => {
       <AboutMe />
       <Service />
       <CardList cardData={cards} />
+      <References />
     </div>
   );
 }

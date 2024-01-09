@@ -10,7 +10,7 @@ const AboutMe = () => {
 
 
   return (
-    <section className="py-12" style={{ backgroundColor: '#EDF5E1' }}>
+    <section className="py-12" style={{ backgroundImage: 'url(https://tecdn.b-cdn.net/img/Photos/Others/background2.jpg)' }}>
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Texto */}
         <div className="md:w-3/4 md:pr-12 order-2">
