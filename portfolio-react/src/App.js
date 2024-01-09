@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from './components/Navbar'; // Importa tu componente Navbar
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importa BrowserRouter, Routes y Route
 import Home from '../src/pages/Home';
-import Portfolio from './pages/Portfolio';
 import WorkExp from '../src/pages/WorkExp';
 import Blog from '../src/pages/Blog'
 import Footer from '../src/components/Footer';
@@ -19,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/workexp" element={<WorkExp />} />
-            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/blog" element={<Blog />} />
             {/* Rutas restantes */}
           </Routes>

@@ -32,6 +32,32 @@ const datosProyecto = [
     descripcion: "Project focused on providing migration advisory services so that people from Latin America, initially, can access opportunities to obtain study visas, learn English, or plan vacations",
     link: "https://trasmundo.vercel.app",
   },
+  {
+    id: 2,
+    nombre: "Proyecto 2",
+    imagen: trasmundoImage,
+    lenguajes: [
+      { nombre: "JavaScript", logo: nodejsLogo },
+      { nombre: "React", logo: reactLogo },
+      { nombre: "Node.js", logo: nodejsLogo },
+      { nombre: "Tailwindscss", logo: tailwindLogo },
+    ],
+    descripcion: "Project focused on providing migration advisory services so that people from Latin America, initially, can access opportunities to obtain study visas, learn English, or plan vacations",
+    link: "https://trasmundo.vercel.app",
+  },
+  {
+    id: 2,
+    nombre: "Proyecto 2",
+    imagen: trasmundoImage,
+    lenguajes: [
+      { nombre: "JavaScript", logo: nodejsLogo },
+      { nombre: "React", logo: reactLogo },
+      { nombre: "Node.js", logo: nodejsLogo },
+      { nombre: "Tailwindscss", logo: tailwindLogo },
+    ],
+    descripcion: "Project focused on providing migration advisory services so that people from Latin America, initially, can access opportunities to obtain study visas, learn English, or plan vacations",
+    link: "https://trasmundo.vercel.app",
+  },
   // Agrega más proyectos si es necesario
 ];
 

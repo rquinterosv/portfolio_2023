@@ -5,11 +5,14 @@ import AboutMe from '../components/AboutMe';
 import CardList from '../components/CardList'; 
 import Service from '../components/Service';
 import References from '../components/References';
+import Portfolio from '../components/Portfolio'
 
 
 // Logos Cards
 import logoWork from '../img/cv.png'
 import logoPortfolio from '../img/portfolio.png'
+
+
 
 const Home = () => {
 
@@ -43,7 +46,7 @@ const Home = () => {
       <Service />
       <CardList cardData={cards} />
       <References />
-      
+      <Portfolio />
     </div>
   );
 }
