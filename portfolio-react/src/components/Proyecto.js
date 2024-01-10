@@ -34,6 +34,16 @@ function Proyecto({ proyecto }) {
           ))}
         </div>
       </div>
+      {/* Botón para el enlace del proyecto */}
+      <div className="flex justify-center pb-5"> {/* Contenedor para centrar el botón */}
+        {proyecto.link && (
+          <a href={proyecto.link} target="_blank" rel="noopener noreferrer">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3">
+              Visitar Proyecto
+            </button>
+          </a>
+        )}
+      </div>
     </div>
   );
 }
