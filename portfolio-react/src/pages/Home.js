@@ -6,6 +6,7 @@ import CardList from '../components/CardList';
 import Service from '../components/Service';
 import References from '../components/References';
 import Portfolio from '../components/Portfolio'
+import Contact from '../components/Contact'
 
 
 // Logos Cards
@@ -47,6 +48,7 @@ const Home = () => {
       <CardList cardData={cards} />
       <References />
       <Portfolio />
+      <Contact />
     </div>
   );
 }
