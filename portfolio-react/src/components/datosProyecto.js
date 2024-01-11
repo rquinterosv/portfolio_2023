@@ -25,7 +25,7 @@ const datosProyecto = [
       { nombre: "css", logo: css },
       { nombre: "Bootstrap", logo: bootstrapLogo },
     ],
-    descripcion: "Project created to showcase my work experience, present the projects I've been working on, and also share some things I'm passionate about in life.",
+    descripcion: "Project for Desafío Latam with the intention of promoting IT talent in Latin America, this page is the landing page so that those interested can apply to the work teams.",
     link: "https://desafiolatam.com/incubadora/",
   },
   {
@@ -50,8 +50,8 @@ const datosProyecto = [
       { nombre: "React", logo: html },
       { nombre: "Node.js", logo: css },
     ],
-    descripcion: "Project focused on providing migration advisory services so that people from Latin America, initially, can access opportunities to obtain study visas, learn English, or plan vacations",
-    link: "https://trasmundo.vercel.app",
+    descripcion: "Page created for the company Grime Fighters, this page was designed by wordpress and focused on presenting the services of the company, changes in HTML and CSS were adjusted to complement the design.",
+    link: "https://grimefighters.ca/",
   },
   {
     id: 2,
@@ -63,8 +63,8 @@ const datosProyecto = [
       { nombre: "Node.js", logo: nodejsLogo },
       { nombre: "Tailwindscss", logo: tailwindLogo },
     ],
-    descripcion: "Project focused on providing migration advisory services so that people from Latin America, initially, can access opportunities to obtain study visas, learn English, or plan vacations",
-    link: "https://trasmundo.vercel.app",
+    descripcion: "Personal presentation page for IT position. On this page components and design structures are created to create a professional presentation of my profile and apply for positions to continue working as a developer.",
+    link: "https://rafaquinterosv.vercel.app/",
   },
   // Agrega más proyectos si es necesario
 ];
