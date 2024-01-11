@@ -43,13 +43,13 @@ const Home = () => {
         {/* <Hero /> */}
         {/* <Welcome /> */}
       </div>
-      <AboutMe />
-      <Service />
-      <CardList cardData={cards} />
-      <References />
-      <Portfolio />
-      <Contact />
-    </div>
+        <AboutMe id="aboutme-section" />
+        <Service id="service-section" />
+        <CardList cardData={cards} id="cardlist-section" />
+        <References id="references-section" />
+        <Portfolio id="portfolio-section" />
+        <Contact id="contact-section" />
+      </div>
   );
 }
 

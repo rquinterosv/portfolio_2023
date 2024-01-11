@@ -27,7 +27,7 @@ const References = () => {
   ];
 
   return (
-    <section
+    <section id="references-section"
       className="rounded-md p-6 text-center shadow-lg md:p-12 md:text-left"
       style={{ backgroundImage: 'linear-gradient(to right, #E0E0E0, #EDF5E1)' }}>
       <div className="flex justify-center">

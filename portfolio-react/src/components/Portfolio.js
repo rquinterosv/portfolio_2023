@@ -7,7 +7,7 @@ function Portfolio() {
   const proyectosPrimeraFila = datosProyecto.slice(0, 4);
 
   return (
-    <div className="portfolio p-8">
+    <div className="portfolio p-8" id="portfolio-section">
       <h2 className="text-3xl mr-2 ml-3 mt-2 p-2 text-left sm:text-left">Projects in which I have participated</h2>
       <h3 className="text-lg mr-2 ml-3 p-3 text-left sm:text-left">Specialising in the creation of landing pages</h3>
       <div className="grid gap-12 md:grid-cols-2 sm:grid-cols-1">

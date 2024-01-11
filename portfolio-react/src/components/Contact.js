@@ -7,7 +7,7 @@ import phoneLogo from '../img/telephone.png';
 
 const Contact = () => {
   return (
-    <div className="service mr-10 ml-10">
+    <div className="service mr-10 ml-10" id="contact-section">
       <h2 className="text-3xl mr-2 ml-3 mt-2 p-2 text-left sm:text-left">Let's talk about your motivations and ideas to boost your business to the maximum.</h2>
       <h3 className="text-lg mr-2 ml-3 p-3 text-left sm:text-left">
         I am committed to the work entrusted to me and I ensure serious work that is of high quality and delivered on time. <br />
