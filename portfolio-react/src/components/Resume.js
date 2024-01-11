@@ -26,8 +26,7 @@ const Resume = () => {
                 </div>
 
                 <h1 className="text-lg font-bold mb-4 italic
-                5" style={{ fontFamily: 'Calibri', fontSize: '2.3rem' }}>Curriculum Vitae</h1>
-                <h2 className="text-lg mb-2" style={{ fontFamily: 'Calibri', fontSize: '1.5rem' }}>Rafael Quinteros Villablanca</h2>
+                5" style={{ fontFamily: 'Calibri', fontSize: '2.3rem' }}>Rafael Quinteros</h1>
                 <h3 className="text-lg italic mb-2" style={{ fontFamily: 'Calibri', fontSize: '1.2rem' }}>{datos.role}</h3>
 
                 <div className="text-left">
