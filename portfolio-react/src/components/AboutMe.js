@@ -10,7 +10,7 @@ const AboutMe = () => {
 
 
   return (
-    <section className="py-12" style={{ backgroundImage: 'linear-gradient(to right, #E0E0E0, #EDF5E1)' }}>
+    <section className="py-12 mt-10" style={{ backgroundImage: 'linear-gradient(to right, #E0E0E0, #EDF5E1)' }}>
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Texto */}
         <div className="md:w-3/4 md:pr-12 order-2">
