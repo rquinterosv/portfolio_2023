@@ -59,15 +59,6 @@ const Navbar = () => {
             <Link
               to="/"
               className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2"
-              onClick={() => { closeMenu(); document.getElementById('cardlist-section').scrollIntoView({ behavior: 'smooth' }); }}
-            >
-              CardList
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              className="block lg:inline-block lg:mt-0 text-white font-semibold hover:underline p-2"
               onClick={() => { closeMenu(); document.getElementById('references-section').scrollIntoView({ behavior: 'smooth' }); }}
             >
               References
