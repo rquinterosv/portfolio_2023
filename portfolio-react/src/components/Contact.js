@@ -11,7 +11,7 @@ const Contact = () => {
       <h2 className="text-3xl mr-2 ml-3 mt-2 p-2 text-left sm:text-left">Let's talk about your motivations and ideas to boost your business to the maximum.</h2>
       <h3 className="text-lg mr-2 ml-3 p-3 text-left sm:text-left">
         I am committed to the work entrusted to me and I ensure serious work that is of high quality and delivered on time. <br />
-        My hourly rate is USD$20, and I always request an advance fee. With this, we start with everything to boost your ideas.
+        The hourly rate will depend on the project and requirements to be implemented.
       </h3>
 
       {/* Información de contacto */}
